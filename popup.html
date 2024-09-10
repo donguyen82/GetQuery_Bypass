@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GET KEY + BYPASS </title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+    html, body {width: 320px; height: 550px; margin: 0; padding: 0; box-sizing: border-box; border-radius: 0;}
+    body {display: flex; flex-direction: column; justify-content: center; align-items: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #2c3e50; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); border: 2px solid #FFA54F; padding: 20px;}
+    #queryButton, #getTokenButton {background: linear-gradient(135deg, #ff7e5f, #feb47b); color: white; border: none; padding: 12px 24px; cursor: pointer; font-size: 16px; font-weight: bold; border-radius: 25px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; margin: 5px 0;}
+    #queryButton:hover, #getTokenButton:hover {transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);}
+    #output {margin: 20px 0; width: 100%; padding: 10px; background-color: #ffffff; border: 1px solid #ccc; font-size: 14px; font-style: italic; white-space: pre-wrap; word-wrap: break-word; max-height: 200px; min-height: 200px; overflow-y: auto;}
+    #description {text-align: center; font-size: 14px; margin-bottom: 15px; color: #ecf0f1;}
+    #rainbowText {font-weight: bold; font-size: 20px; background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff7e5f, #feb47b); background-clip: text; -webkit-background-clip: text; color: transparent; margin-bottom: 20px;}
+    #rainbowText .fa-wrench {margin-right: 5px; font-size: 22px;}
+    #popup {position: fixed; bottom: 138px; right: 40px; background-color: rgba(0, 0, 0, 0.7); color: #fff; padding: 10px; border-radius: 5px; font-size: 14px; opacity: 0; transition: opacity 0.5s ease-in-out;}
+  </style>
+</head>
+<body>
+  <div id="description">
+    <div id="rainbowText"><i class="fas fa-wrench"></i>GET KEY + BYPASS</div>
+  </div>
+  <button id="queryButton">BẤM LẤY QUERY</button>
+  <p id="tokenDescription" style="color: #ecf0f1; font-size: 12px; text-align: center; margin-top: 5px;">Game bị chặn trên Web thì vẫn lấy được Query ID</p>
+  <div id="output">query_id hoặc token sẽ hiển thị ở đây...</div>
+  <div id="popup">Đã copy thành công!</div>
+  <button id="getTokenButton">BẤM LẤY TOKEN</button>
+  <p id="tokenDescription" style="color: #ecf0f1; font-size: 12px; text-align: center; margin-top: 5px;">Kéo xuống cuối để lấy Token của Game mới nhất</p>
+  <script src="popup.js"></script>
+</body>
+</html>

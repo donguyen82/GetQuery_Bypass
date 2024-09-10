@@ -1,0 +1,51 @@
+{
+  "manifest_version": 3,
+  "name": "TOOL GET KEY, TOKEN & BYPASS",
+  "version": "2.1",
+  "description": "Tự động lấy QUERY_ID | TOKEN và BYPASS by LƯỢM AIRDROP AUTO",
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "tabs",
+    "webRequest",
+    "webRequestBlocking",
+    "declarativeNetRequest",
+    "declarativeNetRequestWithHostAccess"
+  ],
+  "host_permissions": [
+    "<all_urls>" ,
+    "*://*/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "TOOL GET KEY, TOKEN & BYPASS"
+  },
+  "icons": {
+    "16": "logo.png",
+    "48": "logo.png",
+    "128": "logo.png"
+  },
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset_1",
+        "enabled": true,
+        "path": "rules.json"
+      }
+    ]
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["handler.js"],
+      "all_frames": true
+    }
+  ],
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'"
+    }
+}

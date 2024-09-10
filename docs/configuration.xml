@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+  <Settings>
+    <Setting name="AutoUpdate" value="true" />
+    <Setting name="MaxRetries" value="5" />
+    <Setting name="EnableLogs" value="true" />
+    <Setting name="LogFilePath" value="C:\Logs\tool_log.txt" />
+    <Setting name="DebugMode" value="false" />
+  </Settings>
+  <Database>
+    <ConnectionString>
+      <![CDATA[Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;]]>
+    </ConnectionString>
+    <Timeout value="30" />
+    <MaxConnections value="10" />
+  </Database>
+  <Features>
+    <Feature name="BetaAccess" enabled="false" />
+    <Feature name="DarkMode" enabled="true" />
+    <Feature name="ExperimentalFeature" enabled="false" />
+    <Feature name="AdvancedAnalytics" enabled="true" />
+  </Features>
+  <UserPreferences>
+    <Language value="en-US" />
+    <Theme value="light" />
+    <Notifications enabled="true" />
+  </UserPreferences>
+  <Security>
+    <EncryptionKey value="A1B2C3D4E5F6G7H8I9J0" />
+    <UseSSL value="true" />
+    <CertificatePath value="C:\Certs\certificate.pfx" />
+  </Security>
+</Configuration>
